@@ -12,11 +12,20 @@ html(lang="en")
                     span.heading__text Games
                     span.heading__text.heading__text--link View all games
                     .heading__icon
+                        svg(xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 64 64").heading__svg
+                            use(xlink:href="#Icon_chevron_right")
             h3.honor Blizzard
             .cards
                 .card
                     .card__face(style="background-image: url(https://bnetcmsus-a.akamaihd.net/cms/page_media/XMG50RXK21EC1506441173958.jpg)")
                     .card__overlay
+                        .card__content
+                            a(href="#")
+                                button.button.button--small
+                            a(href="#")
                 .card
                     .card__face(style="background-image:url(https://bnetcmsus-a.akamaihd.net/cms/page_media/M7G2U62LWFRW1506441174974.jpg)")
                     .card__overlay
+        svg(xmlns="http://www.w3.org/2000/svg")
+            symbol(viewBox="0 0 64 64")#Icon_chevron_right
+                path(d="M22.137,53.807c-0.843,0-1.68-0.353-2.273-1.041c-1.082-1.255-0.942-3.149,0.313-4.231    l19.146-16.509L20.125,15.464c-1.255-1.082-1.395-2.977-0.312-4.231c1.082-1.255,2.976-1.396,4.231-0.312l21.832,18.833    c0.661,0.57,1.041,1.399,1.041,2.272s-0.38,1.702-1.041,2.271l-21.78,18.781C23.528,53.568,22.831,53.807,22.137,53.807z")

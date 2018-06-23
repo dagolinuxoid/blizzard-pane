@@ -16,6 +16,8 @@ a
     background-image: url('https://d9me64que7cqs.cloudfront.net/images/common/background-generic-landscape-short-c67b55f50ca032607997398840751185782dd86436566617ed80dd553f62a890f554ca38ef1de26c6d60b4976ebea6145b9916091073d06823aa9853a093f3e7.jpg') 
     background-repeat: no-repeat
     background-position: center
+    border-top: 1px solid rgba(0,174,255, .3)
+    border-bottom: 5px solid rgba(0,174,255, .3)
 
 =fullabs
     position: absolute
@@ -56,15 +58,25 @@ a
     font-size: 35.154px
     font-weight: 300
     margin: 0 0 20px
+    &__svg
+        display: block
+        fill: #00aeff
     &__link
         display: inline-flex
         align-items: center
+        &:hover .heading__text, &:hover .heading__svg
+            color: #fff
+        &:hover .heading__svg
+            fill: #fff
     &__text        
         color: #fff
         &--link
             font-size: 14.4px
             margin-left: 1rem 
             color: #00aeff
+    &__icon
+        width: .4em
+        height: .35em
 
 .honor
     font-size: 18px
