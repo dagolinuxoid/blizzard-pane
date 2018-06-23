@@ -2,5 +2,43 @@
     box-sizing: border-box
 
 body
-    font-size: 18px
+    font-size: 16px
     margin: 0
+
+.pane
+    margin: 0 auto
+    padding: 20px 40px
+
+=fullabs
+    position: absolute
+    top: 0
+    left: 0
+    right: 0
+    bottom: 0
+
+.cards
+    display: inline-block
+
+.card
+    display: inline-block
+    width: 167px
+    height: 200px
+    position: relative
+    box-shadow: 0 8px 17px rgba(0,0,0, .1)
+    &:not(:first-child)
+        margin-left: 20px
+    &__face
+        +fullabs
+        background-size: cover
+        background-position: bottom center
+        background-repeat: no-repeat
+        border: 1px solid rgba(255,255,255, .15)
+    &__overlay
+        +fullabs
+        border: 1px solid #00aeff
+        background: rgba(0,0,0, .85)
+        transition: opacity .2s ease-out
+        opacity: 0
+        &:hover
+            opacity: 1
+
