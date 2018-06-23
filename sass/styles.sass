@@ -31,6 +31,8 @@ $darkblue: #0e86ca
     display: flex
     align-items: center
     padding: 10px 0
+    &:hover .card__svg
+        fill: #fff
 
 .overlay-icon
     flex-shrink: 0
@@ -98,9 +100,17 @@ a
         left: 15px
         right: 15px
         top: 20px
-        transform: tranlateY(20px)
+        transform: translateY(20px)
         transition: transform .2s ease-out
         font-size: 14.4px
+    &:hover &__content
+        transform: translateY(0)
+    &__svg
+        fill: $lightblue
+
+.text-options
+    color: #fff
+    font-size: 14.4px
 
 .heading
     font-size: 35.154px
