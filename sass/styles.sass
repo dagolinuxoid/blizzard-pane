@@ -31,6 +31,8 @@ $darkblue: #0e86ca
     display: flex
     align-items: center
     padding: 10px 0
+    &:not(:last-child)
+        border-bottom: 1px solid rgba(255,255,255, .1)
     &:hover .card__svg
         fill: #fff
 
@@ -46,6 +48,8 @@ $darkblue: #0e86ca
 body
     font-size: 16px
     margin: 0
+    font-family: 'Open Sans', Arial, serif
+    background: #222
 
 a
     color: $lightblue
@@ -59,7 +63,7 @@ a
     background-repeat: no-repeat
     background-position: center
     border-top: 1px solid rgba(0,174,255, .3)
-    border-bottom: 5px solid rgba(0,174,255, .3)
+    border-bottom: 1px solid rgba(0,174,255, .3)
 
 =fullabs
     position: absolute
