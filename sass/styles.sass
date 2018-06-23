@@ -1,12 +1,43 @@
 *
     box-sizing: border-box
 
+$lightblue: #00aeff
+$darkblue: #0e86ca
+
+.button
+    display: inline-block
+    position: relative
+    background-color: $darkblue
+    border: 1px solid $lightblue
+    text-decoration: none
+    color: #fff
+    padding: 10px 50px
+    text-align: center
+    transition: color .2s, background-color .2s, border-color .2s
+    font-size: 18px
+    font-weight: 400
+    &--small
+        font-size: 15px
+        padding: 7px 42px
+    &--overlay
+        margin-bottom: 10px
+        padding-left: 0
+        padding-right: 0
+        width: 100%
+        &:hover
+            background-color: $lightblue
+
+.link--overlay
+    display: flex
+    align-items: center
+    padding: 10px 0
+
 body
     font-size: 16px
     margin: 0
 
 a
-    color: #00aeff
+    color: $lightblue
     transition: color .2s 
     text-decoration: none
 
@@ -47,12 +78,20 @@ a
         border: 1px solid rgba(255,255,255, .15)
     &__overlay
         +fullabs
-        border: 1px solid #00aeff
+        border: 1px solid $lightblue
         background: rgba(0,0,0, .85)
         transition: opacity .2s ease-out
         opacity: 0
         &:hover
             opacity: 1
+    &__content
+        position: absolute
+        left: 15px
+        right: 15px
+        top: 20px
+        transform: tranlateY(20px)
+        transition: transform .2s ease-out
+        font-size: 14.4px
 
 .heading
     font-size: 35.154px
@@ -60,7 +99,7 @@ a
     margin: 0 0 20px
     &__svg
         display: block
-        fill: #00aeff
+        fill: $lightblue
     &__link
         display: inline-flex
         align-items: center
@@ -73,7 +112,7 @@ a
         &--link
             font-size: 14.4px
             margin-left: 1rem 
-            color: #00aeff
+            color: $lightblue
     &__icon
         width: .4em
         height: .35em
