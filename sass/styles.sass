@@ -1,8 +1,19 @@
+@include variables
+@include genericmixins
+
 *
     box-sizing: border-box
 
-$lightblue: #00aeff
-$darkblue: #0e86ca
+body
+    font-size: 16px
+    margin: 0
+    font-family: 'Open Sans', Arial, serif
+    background: #222
+
+a
+    color: $lightblue
+    transition: color .2s 
+    text-decoration: none
 
 .button
     display: inline-block
@@ -45,17 +56,6 @@ $darkblue: #0e86ca
     position: relative
     vertical-align: middle
 
-body
-    font-size: 16px
-    margin: 0
-    font-family: 'Open Sans', Arial, serif
-    background: #222
-
-a
-    color: $lightblue
-    transition: color .2s 
-    text-decoration: none
-
 .pane
     margin: 0 auto
     padding: 20px 40px
@@ -64,13 +64,6 @@ a
     background-position: center
     border-top: 1px solid rgba(0,174,255, .3)
     border-bottom: 1px solid rgba(0,174,255, .3)
-
-=fullabs
-    position: absolute
-    top: 0
-    left: 0
-    right: 0
-    bottom: 0
 
 .cards
     display: block
