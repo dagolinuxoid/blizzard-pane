@@ -45,6 +45,13 @@ a
         &:hover
             background-color: $lightblue
 
+.is-tertiary
+    background-color: rgba(0,0,0, .2)
+    border: 1px solid rgba(255,255,255, .15)
+    color: $lightblue
+    &:hover
+        color: #fff
+
 .link--overlay
     display: flex
     align-items: center
@@ -183,6 +190,21 @@ a
         margin: 10px 0
     &__desktopOnly
         display: none
+    &__icon
+        display: inline-block
+        width: 17px
+        height: 1px
+        margin-left: 5px
+        position: relative
+        svg
+            position: absolute
+            top: -1em
+            left: 0 
+            right: 0
+            bottom: 0
+            fill: currentColor
+            width: 17px
+            height: 17px
 
 @media (min-width: 768px)
     .cookie
