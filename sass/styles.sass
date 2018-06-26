@@ -1,5 +1,5 @@
-@include variables
-@include genericmixins
+@import variables
+@import genericmixins
 
 *
     box-sizing: border-box
@@ -30,6 +30,13 @@ a
     &--small
         font-size: 15px
         padding: 7px 42px
+    &--tiny
+        padding: 4px 20px
+        font-size: 13px
+        line-height: 1
+        z-index: 2
+        &:hover
+            background-color: $lightblue
     &--overlay
         margin-bottom: 10px
         padding-left: 0
@@ -141,3 +148,46 @@ a
     color: rgba(255,255,255, .5)
     font-weight: 400
     margin: 0
+
+.cookie
+    position: fixed
+    bottom: 10px
+    right: 10px
+    background: linear-gradient(180deg, #283244, rgba(21,26,35, .95))
+    box-shadow: 0 8px 17px 0 rgba(0,0,0, .2)
+    min-height: 88px
+    z-index: 3
+    width: calc(100% - 20px)
+    &::after
+        content: ''
+        position: absolute
+        border: 1px solid rgba(255,255,255, .15)
+        display: block
+        top: 0
+        left: 0
+        right: 0
+        bottom: 0
+    &__content
+        position: relative
+        padding: 20px
+    &__header
+        font-size: 17px
+        font-weight: 400
+        line-height: 1
+        color: #fff
+        margin: 0
+    &__text
+        font-size: 13px
+        color: rgba(255,255,255, .5)
+        line-height: 1.4
+        margin: 10px 0
+    &__desktopOnly
+        display: none
+
+@media (min-width: 768px)
+    .cookie
+        width: 380px
+        &__desktopOnly
+            display: block
+        &__mobileOnly
+            display: none
