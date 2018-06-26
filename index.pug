@@ -15,6 +15,12 @@ html(lang="en")
                     .cookie__mobileOnly
                         |This website uses cookies. By further browsing you consent to such use.
                 button#cookie-compliance-agree.button.button--tiny OK 
+                a(href="#" terget="_blank")
+                    button.button.button--tiny.is-tertiary
+                        span Learn More
+                        .cookie__icon
+                            svg
+                                use(xlink:href="#cookie-icon-new_window")
         .pane
             h2.heading 
                 a(href="#").heading__link
@@ -126,3 +132,6 @@ html(lang="en")
             symbol(viewBox="0 0 64 64")#Icon_play
                 path(d="M32,30.95c-1.657,0-3-1.343-3-3v-7c0-1.657,1.343-3,3-3s3,1.343,3,3v7    C35,29.607,33.657,30.95,32,30.95z")
                 path(d="M32,55.074c-9.09,0-17.064-8.062-17.064-17.252V13.87c0-2.957,2.065-4.944,5.139-4.944H44.12    c3.003,0,4.944,1.94,4.944,4.944v23.951C49.064,47.012,41.09,55.074,32,55.074z M19.936,13.931v23.89    c0,6.527,5.637,12.252,12.064,12.252s12.064-5.726,12.064-12.252V13.926H20.075C20.022,13.926,19.976,13.928,19.936,13.931z")
+            symbol(viewBox="0 0 64 64")#cookie-icon-new_window
+                path(d="M21.737,39.117c3.938-6.052,8.981-10.014,19.089-10.014v7.024L53.708,24.95   L40.826,13.77v6.72C26.135,20.489,21.737,32.97,21.737,39.117L21.737,39.117z")
+                path(d="M48.792,35.739V47.23c0,0.276-0.224,0.5-0.5,0.5h-35c-0.276,0-0.5-0.224-0.5-0.5v-26   c0-0.276,0.224-0.5,0.5-0.5h12.624l5-5H13.292c-3.033,0-5.5,2.467-5.5,5.5v26c0,3.033,2.467,5.5,5.5,5.5h35   c3.033,0,5.5-2.467,5.5-5.5V30.739L48.792,35.739z")
